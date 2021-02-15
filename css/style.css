@@ -13,17 +13,23 @@ Dark green: #28b485
  * {
      margin: 0;
      padding: 0px;
-     box-sizing: border-box;
+     box-sizing: inherit;
+ }
+
+
+ html {
+     font-size: 62.5%;
  }
 
 
  body {
      font-family: 'Lato', sans-serif;
      font-weight: 400;
-     font-size: 16px;
+     font-size: 1.6rem;
      line-height: 1.7;
      color: #777;
-     padding: 30px;
+     padding: 3rem;
+     box-sizing: border-box;
  }
 
 
@@ -43,20 +49,20 @@ Dark green: #28b485
 
 
  /* HEADER -> LOGO */
- .logo-box {
+ .header__logo-box {
      position: absolute;
-     top: 40px;
-     left: 40px;
+     top: 4rem;
+     left: 4rem;
  }
 
 
- .logo {
-     height: 35px;
+ .header__logo {
+     height: 3.5rem;
  }
 
 
 /* HEADER - TITLE */
-.heading-text-box {
+.header__text-box {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -70,15 +76,15 @@ Dark green: #28b485
      color: #fff;
      text-transform: uppercase;
      backface-visibility: hidden;
-     margin-bottom: 60px;
+     margin-bottom: 6rem;
  }
 
 
- .heading-primary-main {
+ .heading-primary--main {
      display: block;
-     font-size: 60px;
+     font-size: 6rem;
      font-weight: 400;
-     letter-spacing: 37.2px;
+     letter-spacing: 3.72rem;
      animation-name: moveInLeft;
      animation-duration: 1s;
      animation-timing-function: ease-out;
@@ -87,7 +93,7 @@ Dark green: #28b485
  }
 
 
- .heading-primary-sub {
+ .heading-primary--sub {
      display: block;
      font-size: 20px;
      font-weight: 700;
@@ -101,11 +107,11 @@ Dark green: #28b485
  @keyframes moveInLeft {
      0% {
          opacity: 0;
-         transform: translateX(-100px);
+         transform: translateX(-10rem);
      }
 
      80% {
-         transform: translateX(10px);
+         transform: translateX(1rem);
      }
 
      100% {
@@ -118,11 +124,11 @@ Dark green: #28b485
  @keyframes moveInRight {
      0% {
          opacity: 0;
-         transform: translateX(100px);
+         transform: translateX(10rem);
      }
 
      80% {
-         transform: translateX(-10px);
+         transform: translateX(-1rem);
      }
 
      100% {
@@ -135,11 +141,11 @@ Dark green: #28b485
   @keyframes moveInBottom {
      0% {
          opacity: 0;
-         transform: translateY(100px);
+         transform: translateY(10rem);
      }
 
      80% {
-         transform: translateY(-10px);
+         transform: translateY(-1rem);
      }
 
      100% {
@@ -153,26 +159,26 @@ Dark green: #28b485
  .btn:visited {
      text-transform: uppercase;
      text-decoration: none;
-     padding: 15px 40px;
+     padding: 1.5rem 4rem;
      display: inline-block;
-     border-radius: 100px;
+     border-radius: 10rem;
      transition: all .2s;
      position: relative;
  }
 
 
  .btn:hover {
-     transform: translateY(-3px);
-     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+     transform: translateY(-.3rem);
+     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
  }
 
 
  .btn:active {
-     transform: translateY(-1px);
+     transform: translateY(-.1rem);
  }
 
 
- .btn-white {
+ .btn--white {
      background-color: #fff;
      color: #777;
 }
@@ -183,7 +189,7 @@ Dark green: #28b485
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position:absolute;
     top: 0;
     left: 0;
@@ -192,7 +198,7 @@ Dark green: #28b485
 }
 
 
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
@@ -203,7 +209,7 @@ Dark green: #28b485
 }
 
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }

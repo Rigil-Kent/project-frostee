@@ -37,5 +37,51 @@ Dark green: #28b485
          url(../img/hero.jpg);
      background-size: cover;
      background-position: top;
-     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+     position: relative;
+     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+ }
+
+
+ /* HEADER -> LOGO */
+ .logo-box {
+     position: absolute;
+     top: 40px;
+     left: 40px;
+ }
+
+
+ .logo {
+     height: 35px;
+ }
+
+
+/* HEADER - TITLE */
+.heading-text-box {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+}
+
+
+ .heading-primary {
+     color: #fff;
+     text-transform: uppercase;
+ }
+
+
+ .heading-primary-main {
+     display: block;
+     font-size: 60px;
+     font-weight: 400;
+     letter-spacing: 37.2px;
+ }
+
+
+ .heading-primary-sub {
+     display: block;
+     font-size: 20px;
+     font-weight: 700;
+     letter-spacing: 15px;
  }
